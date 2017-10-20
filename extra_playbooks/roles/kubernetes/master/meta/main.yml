@@ -1,0 +1,7 @@
+---
+dependencies:
+  - role: download
+    file: "{{ downloads.hyperkube }}"
+    tags:
+      - download
+      - hyperkube

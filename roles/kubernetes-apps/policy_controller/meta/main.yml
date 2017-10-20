@@ -1,0 +1,24 @@
+---
+dependencies:
+  - role: download
+    file: "{{ downloads.calico_policy }}"
+    when:
+      - enable_network_policy
+      - kube_network_plugin in ['calico', 'canal']
+    tags:
+      - download
+      - canal
+      - policy-controller
+
+  - role: policy_controller/calico
+    when:
+      - kube_network_plugin == 'calico'
+      - enable_network_policy
+    tags:
+      - policy-controller
+
+  - role: policy_controller/calico
+    when:
+      - kube_network_plugin == 'canal'
+    tags:
+      - policy-controller

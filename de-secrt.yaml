@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  key: QVFBV0pmVlh2MG5DQ2hBQXBsRURlQjN4OGluRW1JTmNXaHNCM1E9PQ==
+kind: Secret
+metadata:
+  creationTimestamp: 2017-07-04T08:21:52Z
+  name: ceph-secret-user
+  namespace: default
+  resourceVersion: "21442624"
+  selfLink: /api/v1/namespaces/default/secrets/ceph-secret-user
+  uid: d593d4f2-6091-11e7-970b-02000a011504
+type: kubernetes.io/rbd

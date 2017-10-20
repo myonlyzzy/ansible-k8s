@@ -1,0 +1,6 @@
+---
+- hosts: node1
+  user: root
+  tasks:
+    - name: node1_test
+      shell: touch /tmp/node1_test.txt

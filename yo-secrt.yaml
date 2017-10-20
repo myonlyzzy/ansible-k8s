@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  key: QVFBV0pmVlh2MG5DQ2hBQXBsRURlQjN4OGluRW1JTmNXaHNCM1E9PQ==
+kind: Secret
+metadata:
+  creationTimestamp: 2017-10-16T10:03:54Z
+  name: ceph-secret-user
+  namespace: yoyo
+  resourceVersion: "32051920"
+  selfLink: /api/v1/namespaces/yoyo/secrets/ceph-secret-user
+  uid: 5120dd69-b259-11e7-908d-02000a011501
+type: kubernetes.io/rbd
